@@ -1,28 +1,84 @@
-.presale-placeholder {
-  width: 100%;
-  min-height: 400px;
-  background-color: #0b100d;
-  display: flex;
-  align-items: center;
+.presale-block {
+  max-width: 760px;
+  margin: 0 auto;
 }
 
-/* asegura que el wrap ocupe altura completa */
-.presale-placeholder .wrap {
-  width: 100%;
-  min-height: 400px;
+.presale-lead {
+  margin: 0 0 38px;
+  font-size: 16px;
+  line-height: 1.78;
+  color: var(--muted);
 }
 
-/* responsive */
+.presale-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+.presale-col h4 {
+  margin: 0 0 16px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--green);
+}
+
+.presale-block .s-h2 {
+  margin-bottom: 24px;
+}
+
+.glow-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 10px;
+}
+
+.glow-list li {
+  position: relative;
+  padding-left: 20px;
+  font-size: 14px;
+  line-height: 1.62;
+  color: var(--muted);
+}
+
+.glow-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  background: var(--green);
+  box-shadow:
+    0 0 6px 1px rgba(184, 255, 79, 0.7),
+    0 0 12px 2px rgba(184, 255, 79, 0.3);
+}
+
 @media (max-width: 768px) {
-  .presale-placeholder,
-  .presale-placeholder .wrap {
-    min-height: 280px;
+  .presale-cols {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .presale-lead {
+    font-size: 15px;
   }
 }
 
 @media (max-width: 480px) {
-  .presale-placeholder,
-  .presale-placeholder .wrap {
-    min-height: 220px;
+  .presale-lead {
+    margin-bottom: 32px;
+    font-size: 14px;
+    line-height: 1.7;
+  }
+
+  .presale-cols {
+    margin-bottom: 40px;
   }
 }
