@@ -1,0 +1,28 @@
+.presale-placeholder {
+  width: 100%;
+  min-height: 400px;
+  background-color: #0b100d;
+  display: flex;
+  align-items: center;
+}
+
+/* asegura que el wrap ocupe altura completa */
+.presale-placeholder .wrap {
+  width: 100%;
+  min-height: 400px;
+}
+
+/* responsive */
+@media (max-width: 768px) {
+  .presale-placeholder,
+  .presale-placeholder .wrap {
+    min-height: 280px;
+  }
+}
+
+@media (max-width: 480px) {
+  .presale-placeholder,
+  .presale-placeholder .wrap {
+    min-height: 220px;
+  }
+}

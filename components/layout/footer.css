@@ -1,0 +1,30 @@
+.ftr {
+  background: #060a07;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 24px 0;
+}
+
+.ftr-in {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+}
+
+/* mobile */
+@media (max-width: 600px) {
+  .ftr {
+    padding: 20px 0;
+  }
+
+  .ftr-in {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 11px;
+  }
+}
