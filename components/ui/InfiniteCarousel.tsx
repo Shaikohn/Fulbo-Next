@@ -95,7 +95,6 @@ export default function InfiniteCarousel({
     <div className={`car-wrap ${variant === "beta" ? "beta-track-wrap" : ""}`}>
       <div
         ref={trackRef}
-        id={trackId}
         className={`car-track ${variant === "beta" ? "beta-track" : ""}`}
         onTransitionEnd={handleTransitionEnd}
       >
