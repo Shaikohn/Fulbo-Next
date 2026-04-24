@@ -15,7 +15,6 @@ type InfiniteCarouselProps = {
 
 export default function InfiniteCarousel({
   items,
-  trackId,
   variant = "game",
 }: InfiniteCarouselProps) {
   const trackRef = useRef<HTMLDivElement | null>(null);
